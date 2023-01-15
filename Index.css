@@ -1,18 +1,38 @@
-    .block1 {
+body {
+  background-color: black;
+  overflow: hidden;
+}
+
+#tabbar {
   background-color: black;
   color: #00C000;
   border: 2px solid #00C000;
-  margin: 15px;
+  margin: -10px;
   padding: 20px;
-}      
-    .block2 {
-  background-color: black;
-  border: 2px solid #00C000;
-  margin: -5px;
-  padding: -0px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: flex-end;
 }
-    .outline1 {
-  color: black;
-  text-shadow: #000 0px 0px 1px;
-  -webkit-font-smoothing: antialiased;
+
+#contentframe {
+  position:absolute;
+  top: 6.3%;
+  left: 0px;
+  border: none;
+  height: 93.9%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.inactivetab { /* please fix the tabs, i want them to have height but that screws with the tab bar border */
+  width: 50px;
+  height: 0px;
+}
+
+.activetab {
+  width: 50px;
+  height: 0px;
+  background-color: white;
 }
