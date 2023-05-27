@@ -7,10 +7,19 @@
   src: url(DTM-Mono.otf);
 }
 
+* {
+  font-family: determinationSans;
+}
+
 body {
   color: white;
   background-color: black;
   overflow: hidden;
+}
+
+img {
+  image-rendering: optimizeSpeed;
+  image-rendering: pixelated;
 }
 
 #tabbar {
@@ -40,27 +49,24 @@ body {
 .inactivetab {
   width: 70px;
   height: 20px;
-  padding-top: 2px;
+  padding-top: 3px;
   margin-top: 15px;
   margin-right: 10px;
   margin-left: 10px;
   text-align: center;
   font-style: italic;
   border: 2px solid #00C000;
-  font-family: determinationSans;
 }
 
 .activetab {
   width: 70px;
   height: 20px;
-  padding-top: 2px;
+  padding-top: 3px;
   margin-top: 15px;
   margin-right: 10px;
   margin-left: 10px;
   text-align: center;
   background-color: black;
-  font-weight: bold;
-  color: white;
+  color: #FDFDFD;
   border: 2px solid magenta;
-  font-family: determinationSans;
 }

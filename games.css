@@ -1,0 +1,43 @@
+#gameGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: ;
+  height: 100%;
+}
+
+.gameBorder {
+  background-color: black;
+  border: 2px solid #00C000;
+  margin: 3%;
+  padding: 0%;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  grid-template-rows: 35% 140%;
+  grid-template-areas: 
+    "image title"
+    "image description";
+}
+
+.gameImage {
+  border: 2px solid #00C000;
+  grid-area: image;
+  margin: 15%;
+}
+
+.gameTitle {
+  grid-area: title;
+  margin: 4%;
+  text-align: center;
+  font-size: 28px;
+  color: #FEF53D;
+}
+
+.gameDesc {
+  grid-area: description;
+  margin-top: -5%;
+  text-align: center;
+  font-family: determinationMono;
+  font-size: 18px;
+  color: #FDFDFD;
+}
