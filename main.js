@@ -13,3 +13,16 @@ function selectTab(evt) {
 for (const tab of tabbar.children) {
     tab.onclick = selectTab;
 }
+
+function ready() {
+    console.log(window.location.hash)
+    if(window.location.hash) {
+        for (const tab of tabbar.children) {
+            if ("#"+tab.id == window.location.hash) {
+                tab.click()
+            }
+        }
+      }
+}
+
+window.onload = ready;
