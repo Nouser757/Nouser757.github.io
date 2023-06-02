@@ -36,6 +36,7 @@
 .gameDesc {
   grid-area: description;
   margin-top: -5%;
+  height: 20px;
   text-align: center;
   font-family: determinationMono;
   font-size: 18px;
