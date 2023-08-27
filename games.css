@@ -2,14 +2,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas: ;
   height: 100%;
 }
 
 .gameBorder {
   background-color: black;
   border: 2px solid #00C000;
-  margin: 3%;
+  margin: 1%;
   padding: 0%;
   display: grid;
   grid-template-columns: 2fr 5fr;
@@ -22,12 +21,15 @@
 .gameImage {
   border: 2px solid #00C000;
   grid-area: image;
-  margin: 15%;
+  margin: 10%;
+  margin-bottom: 10%;
+  margin-left: 15%;
 }
 
 .gameTitle {
   grid-area: title;
   margin: 4%;
+  height: 0px;
   text-align: center;
   font-size: 28px;
   color: #FEF53D;
@@ -35,9 +37,10 @@
 
 .gameDesc {
   grid-area: description;
-  margin-top: -5%;
+  margin-top: -4%;
   margin-left: 5%;
   width: 85%;
+  height: 0px;
   text-align: center;
   font-family: determinationMono;
   font-size: 18px;
