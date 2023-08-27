@@ -36,7 +36,6 @@ img {
   justify-content: center;
   z-index: 1;
   align-content: flex-end;
-  font-size: 30px;
 }
 
 #contentframe {
@@ -51,10 +50,10 @@ img {
 }
 
 .inactivetab {
-  width: 140px;
-  height: 40px;
+  width: 70px;
+  height: 20px;
   padding-top: 3px;
-  margin-top: -5px;
+  margin-top: 15px;
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: -2px;
@@ -64,10 +63,10 @@ img {
 }
 
 .activetab {
-  width: 140px;
-  height: 40px;
+  width: 70px;
+  height: 20px;
   padding-top: 3px;
-  margin-top: -5px;
+  margin-top: 15px;
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: -2px;
