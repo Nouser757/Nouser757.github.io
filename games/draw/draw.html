@@ -632,7 +632,7 @@
 
 		}
 		e.type = "application/javascript";
-		e.src = "rps.js";
+		e.src = "draw.js";
 		e.id = "e_script";
 		
 		document.body.appendChild(e); // load and run
@@ -982,7 +982,7 @@ canvas{
 
 .p8_start_button{
 	cursor:pointer;
-	background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAABMXPacAAAE/klEQVR4Ae2dMWgbSxCGR8K8JkRgE+MikCJFsAi8VK5c2MGlXRr3QvCaVHmoUHdcp0LgKk3AuDcpnfLhpHDlysVDwcUrXhcUHHBI85oE3orVZGd3b6W7vTvJ/4c4RnNzu3cz88+2BAAAAAAAAAAAAAAAAACApacRe4Ok38uMSQfDEp6S8XWgiR5cWpJ+L+n3aG8z8zeJjPwUj4cCAAqAAgAiapRwEmg7vTqf+rcOpv7BMOdTKt4V6doFCgC0EnsD1Xe8o0O6cr6ncAaA+imgKvh58Ms5UTP1QAEoAAoAcAYUT7J1YJ4KNZv+UAAU4Onffi/zbj07GgqAAoro/fTq3HqX+/06kCu44rnfZUMBUMAywtWWYUfTARRQMY3yO24yo709xSNduKZ5eDzOADCLAjqdLhE92VgtoS8WkfnyAwVUDAqAAqAAAAW4v6zEWDTp97SdDoYFrtxab2v7bjxa0KTz/EABy6IAXtV/P38tZM1HRwkR/XdxZvh/e3lERK2Ls6kO9jant//6VPOu5/mBAhZZAf6uPz09yflyr55+J6Lji6nndXefiI5PRO+/+EZEdP2QiHbWpueE4uNtNadFSH6ggIpphAR1Ol3D82RjNVLXc1rrbT3x1UnA7bvffxBRsnVAROnVuZ7+SgG77ed6nQ+jv6PqIE9+oIB6KEDWkNdK3o3X9VIBau6/+eeB0ft87qven0ze7UPd9QqlhvTyXYE9XlR+oICqFaCqJ6uk/HKWKU86GJbwcvIMcM19hZr+vOu5DuY7A2LnBwqomBX/bXmOl9P7irvxiIhaqvfHIyKiF4+nvS/gXa+uu3/sE9GHt+8jvWH+/EAB9VaAmn3+U74cHUy4fji1xfSfdP3/OlCo3p9v+oeQPz9QQMU0+Jkuaxtytw4oBbjIr4B4+YEC6k2n07UOOJe/ch3o36LkBwqomJVl+pj8s758oAAUAAUAFdIIPOsNz+npCXJXSH6gAAAAAAAAAAAAACwkfz6e/Dy2/itt61KZASHrGLZ0ut5Zx/Cra69aFMBz5THSdmXNn1y5rzXA/1bWVwr5lgVQgKsN/d3EA2pYgPrWwP/B/kgoIG4BMpUx6xlgJCtzmrlmulzHVaQFOAMAAGB2Hh0l6qdsj19fuV/bck3DmfR7Sb+nDH3lfiPGsPk6rm+JtEWyfah+yvb49ZX7tW1fU6ZYJ9FzlTGyBkZqDNt19cd7ChBvC5lil98fY3nn7cOmK4PWXFvtL2fprLLzJDEz0ZVs4clgiJ1evrMqIDvLs3ryKMDajFbP3AqYbwt/lmf1GOs0Q8a34bTGyOzzmHQwNOYs//h0MNS9qWw5lzNbu4QtzOZ1O60xIesAAECptNbb/Kp+2uZh/C93Sv+SsbPW5lf10zYP43+5U/rtBZCGcdcTc08KIA3jrifGSjNcKDrRd+MRJoe1TjrRH2+DU2SMEU93h8QscWb9CrDeClGAZe7L4eMa9PfnDDDmvhw+rkGffQYAAAAAAAAAAAAAAAAAAACAuDTyPJzQM2WkdOOydZi0rUvxB117udYJ3FfbCT3TKxjPZn5jLaqnXsh1lZk1ssz9xuPWSO2Uu/hjQt7H825y2QJpFlIDbcuGMhLqSq5+vPAvnO9bQvy1KEBKNzrpVpEaAR7xGjMhan6tOXVtHXXg5C2A52v5PNHD15piPppdh4RVLuExnskTos7M0QcAAIvIT6DVQoWZz6J7AAAAEHRFWHRMb2RlUE5HADIwMTEwMjIx41m2wQAAAABJRU5ErkJggg==");
+	background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAIAAABMXPacAAAEmklEQVR4Ae2dO27zMBCEFcFHSJc+R8pBAhfuBHUuDB8kR0rvLof4Cxn6aYki98WXNAPBcCKKpvbbnWk7CIIgCIIgCIIa0NB9Lr6/fw3zZ/f9wdqtR0GVDCY9qw9lq777+QKAOQGQvP2H7nM9CrCgfBq7X/+N74/nBUEQBEEBvWkeHrpP4/g6nnqUoKxOdR7Lna19jwsmYC8TEO1TcWAgA6DjZUB4nojD1ER4YAIAABZ0ZAXcLI+DNQ9AUyZilqS1oOkQ7uf6cFtrkjbmfOXv/WIZMHa/c5UX3+FOCQG4vzTVfaq4+72qrslmZRne961Ij0RHatETrLuCw8+beN8oqQG8WBCU32wBoDADACjM4NTu8O5DmIDN7AWAYgxy8jCzIMwBJqDJ0Gp+AsJtG67y2P1Guz41p6NnQJQQJqBGLxou5+ez1xsAZDe9y9mk9A0DqCE/rTAcPQMk+K83wwkAgPIMIAiCSukNJQhouJxd02fdhQyqP5eYe5euHoWuAQMUsqCtEofvIgPMvB4qaTKphQzIgSGwMwA8bQfmU+9YKCfDJKthSgY7lA2bhtu/4gn4/mBfrTEwqV2yxhcAaI2BIchqABySQWUAvAxaJifu8d7sCPdH6PKWG7KcANm47GICrLI6MQBviRsHMFzObt0Xf9YHYF3ldGg1ScOEHZ2AZFRkvdkKAD6DQwLgVpAFgPxe0fZPwwAACicE92Xor8ddIwOmSSm7hGgTgLhnUySQwqD6l9/zHmX+DK/Mqa0D3B/d/VH4bKqXWbzYuvrrW0UmQOPXJSZABGBR/SiAnPGusek2AKyrXy0A250LAFg7u7f6WysBoHB+wIIAgMcj/Kws2AEAACwOyioHABQGEFifC8BwOetfuq+bcFD3h/+SPSXbTY2nZQBFNdU3XGUKAx0Ai07h9WYdpZ8qO15v7p+LNdPdqE7o5RSTMV5vEwMXFWQ/B16Tmf8/f5rENcSzeEpIIISTE4L51DsiEARBEARBkLHev4bFFVhZz5mLHKlP9yaGK3dW9IQArKpP2Sc8W/SiezfJhuRUpPrRff5+xjy9X6cf2vh+tMe9a+i9z52AabH3nO5u7mc2D8wavAEAxAMpAUQxyMxNVrSe8pN5jkVxHi8zevmI3U08BnFYI7esACgtSND73P6lTAAF0nqxIGz+b2I4ASwGrNdgAeBaEMs/10/Jcm6+ekMP8U6urEeShl40eLYsaF759zNSSh9wzrQvSTQEQbToY3PR8ut/0ntfbMjJM1UAwCQD0u3Aqn55AJQG30o/PVqBF4UPwK0+C0CfgwatIlFjLXUwbwZY7U8KYZnPcgNczEBpSoKjKl2BDUDcMoIJqHMO9NVXdTe9p+htuJUBRDuOXlYZIBsp+jktJ8B7PnrLuBNQ+RwkDByxk3If3FoZngN97+9zApS9H5gDTICl79M7i54Bmo4RTIDGD+KFsgJgFf51AhC019pmlee3dEmTGeW2Dh3A4qgmrpAQAPcpK5NMCkDAICsAw9xO5a2xM7BchTL0DQAwsbucAMK/LkiO3QIocgBZzgGA6gz6ErcHoM4+QIkhSKp/AhLLx9On03cAAAAQdEVYdExvZGVQTkcAMjAxMTAyMjHjWbbBAAAAAElFTkSuQmCC");
 	-repeat center;
 	-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;
 }
@@ -1007,12 +1007,11 @@ canvas{
 
 </head>
 
-<body style="background-image: url(./grid.gif); padding:0px; margin:0px; background-color:#000; color:#ccc">
+<body style="background-image: url(../../shared/grid.gif); padding:0px; margin:0px; background-color:#000; color:#ccc">
 <div id="body_0"> <!-- hide this when playing in mobile (p8_touch_detected) so that elements don't affect layout -->
 
 
 <!-- Add any content above the cart here -->
-
 
 <div id="p8_frame_0" style="max-width:800px; max-height:800px; margin:auto;"> <!-- double function: limit size, and display only this div for touch devices -->
 <div id="p8_frame" style="display:flex; width:100%; max-width:95vw; height:100vw; max-height:95vh; margin:auto;">

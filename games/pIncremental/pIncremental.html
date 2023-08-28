@@ -1,0 +1,46 @@
+<html class="" dir="ltr" lang="UTF-8">
+  <head>
+    <meta charset="UTF-8">
+    <title>Project Incremental</title>
+    <meta name="description" content="Placeholder web description.">
+    <meta name="author" content="Logan Cressy">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script src="./main.js"></script>
+  </head>
+  <body style="background-image: url(images/backgrounds/backpixel.png); overflow-y: scroll;">
+    <header>
+      <div id="barContainer">
+        <div id="progressBar"></div>
+      </div>
+    </header>
+    <div id="gamegrid">
+      <div class="block1">
+        <h2>Project incremental</h2>
+        <h4>- Milestone at 20 bird</h4>
+        <h4>- Values currently stick on reset</h4>
+        <h6 style="align-self: flex-end;">© Copyright Logan Cressy 2023</h6>
+      </div>
+      <div class="block1">
+        Cost: free
+        <button id=basicButton onclick="resourceClick('basic')">Base resource</button>
+        Cost: 5 base
+        <button id=basecondButton onclick="resourceClick('basecond', 1, [['basic', 5]])">Basecond resource</button>
+        Cost: 30 base, 10 basecond
+        <button id=birdButton onclick="resourceClick('bird', 1, [['basic', 30], ['basecond', 10]])">Bird resource</button>
+        Cost 100 base, 50 basecond, 15 bird
+        <button id=bas4Button onclick="resourceClick('bas4', 1, [['basic', 100], ['basecond', 50], ['bird', 15]])">Bas4 resource</button>
+      </div>
+      <div class="block1">
+        Base
+        <button id="basic">0</button>
+        Basecond
+        <button id="basecond">0</button>
+        Bird
+        <button id="bird">0</button>
+        Bas4
+        <button id="bas4">0</button>
+      </div>
+    </div>
+  </body>
+</html>

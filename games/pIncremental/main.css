@@ -1,0 +1,52 @@
+p {
+	font-size: 20px;
+}
+body {
+	color: #ff2288;
+	margin: 20px;
+}
+button {
+	font-size: 20px;
+	padding: 5px;
+	background-color: #FF006E;
+	color: #404040;
+	height: fit-content;
+}
+h6 {
+	margin-bottom: -0.5%;
+}
+#gameGrid {
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-rows: min-content;
+	height: 90%;
+}
+#barContainer {
+	background-color: #404040;
+	border: 2px solid #FF006E;
+	height: 10%;
+	margin: 15px;
+	display: grid;
+	padding: 0px;
+}
+#progressBar {
+	background-color: #FF006E;
+	height:100%;
+	width:0%;
+}
+.block1 {
+	background-color: #404040;
+	border: 2px solid #FF006E;
+	margin: 15px;
+	display: grid;
+	padding: 20px;
+}      
+.block2 {
+	position: fixed;
+	background-color: #404040;
+	border: 4px solid #FF006E;
+	margin: 15px;
+	bottom: 0px;
+	padding: -5px;
+	width: 20%;
+}
